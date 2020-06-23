@@ -1,0 +1,17 @@
+{
+  "name": "MyQuotesApp",
+  "displayName": "MyQuotesApp",
+  "expo": {
+    "name": "MyQuotesApp",
+    "slug": "MyQuotesApp",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
