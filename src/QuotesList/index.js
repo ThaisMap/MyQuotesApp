@@ -11,16 +11,14 @@ export default function QuotesList(){
         .onSnapshot((snap) => {
             const retrievedQuotes = [ ];
             
-            snap.forEach(doc => {
-                console.log(doc._data);
+            snap.forEach(doc => { 
                 retrievedQuotes.push({
                     ...doc._data, 
                     key: doc.id,
                 });
             });
         setQuotes(retrievedQuotes);
-        });
-        console.log(quotes);
+        }); 
         return () => subscriber();
     }, []);
 
