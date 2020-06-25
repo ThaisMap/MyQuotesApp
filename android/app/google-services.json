@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "514573051703",
+    "firebase_url": "https://testes-8dd0a.firebaseio.com",
+    "project_id": "testes-8dd0a",
+    "storage_bucket": "testes-8dd0a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514573051703:android:1b1ea5fe781f8c6678dcb2",
+        "android_client_info": {
+          "package_name": "com.myquotesapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "514573051703-0f73h51h4ttic73np4ossrkpr1k7l4il.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKq6zGwlwZmhmhbSdhJxqDjyGugDaLYvI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "514573051703-0f73h51h4ttic73np4ossrkpr1k7l4il.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
