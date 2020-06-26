@@ -1,0 +1,45 @@
+<Samples>
+	<EmptyScreen>
+			import React from 'react';
+			import { View } from "react-native";
+
+			export default function Sample(){
+				<View />
+			}
+	</EmptyScreen>
+</Samples>
+
+<StartCommands>
+	cd C:\Users\thais.maria.RODOMINAS\Documents\GitHub\MyQuotesApp 
+	npx react-native start
+	cd C:\Users\thais.maria.RODOMINAS\Documents\GitHub\MyQuotesApp 
+	npx react-native run-android
+</StartCommands>
+
+<Firebase>
+	<Android-build.gradle>
+	dependencies {
+			...
+			classpath 'com.google.gms:google-services:4.2.0'
+			}
+	</Android-build.gradle>	
+			
+	<Android-App-build.gradle>
+	 defaultConfig {
+	  
+			multiDexEnabled true
+		}
+		
+	dependencies {
+	  implementation 'com.google.firebase:firebase-core:17.0.0'
+		implementation 'com.google.firebase:firebase-firestore:20.0.0'
+		implementation 'com.android.support:multidex:1.0.3'
+	}
+
+	//In the bottom
+	<react-native-paper Icons>
+	apply from: "../../node_modules/react-native-vector-icons/fonts.gradle" 
+	</react-native-paper Icons>
+	apply plugin: 'com.google.gms.google-services'
+	</Android-App-build.gradle>
+</Firebase>
