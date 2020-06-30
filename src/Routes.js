@@ -8,9 +8,9 @@ import SingleQuote from './SingleQuote';
 const BottomNavigationExample = () => {
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
-    { key: 'add', title: 'Add', icon: 'account' },
-    { key: 'list', title: 'List', icon: 'account-minus' },
-    { key: 'random', title: 'Random', icon: 'account-alert' },
+    { key: 'add', title: 'Add', icon: 'bookmark-plus' },
+    { key: 'list', title: 'List', icon: 'bookmark-multiple' },
+    { key: 'random', title: 'Random', icon: 'format-quote-close' },
   ]);
 
   const renderScene = BottomNavigation.SceneMap({

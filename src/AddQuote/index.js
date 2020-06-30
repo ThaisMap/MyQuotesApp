@@ -8,7 +8,7 @@ export default function AddQuote(){
     const [author, setAuthor] = useState('');
     const ref = firestore().collection('Quotes');
     return(
-        <View>
+        <View style={styles.button}>
             <TextInput label={'New quote'} mode="outlined" multiline value ={quote} onChangeText={setQuote} />
             <TextInput label={'Author'} mode="outlined" value={author} onChangeText={setAuthor} />
             <Button style={styles.button} mode="contained" onPress={() => PushTheQuote()}>Add a Quote</Button>             
@@ -31,6 +31,6 @@ export default function AddQuote(){
 
 const styles = StyleSheet.create({
     button:{
-        margin:30
+        margin: 15
     }
 });
