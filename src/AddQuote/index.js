@@ -3,7 +3,7 @@ import { View,  StyleSheet,  } from 'react-native';
 import { TextInput,  Button } from 'react-native-paper';
 import firestore from "@react-native-firebase/firestore";
 
-export default function AddQuote(){
+export default function AddQuote(){ 
     const [quote, setQuote] = useState('');
     const [author, setAuthor] = useState('');
     const ref = firestore().collection('Quotes');
@@ -14,15 +14,14 @@ export default function AddQuote(){
             <Button style={styles.button} mode="contained" onPress={() => PushTheQuote()}>Add a Quote</Button>             
         </View>
     );
+ 
 
     async function PushTheQuote(){
         if( quote.length > 1)
         {
-            await ref.add({
-                Sentence: quote,
-                Author: author
-            });
-        
+            const citacao = {Sentence: quote, Author: author};
+            await ref.add(citacao);
+            
             setQuote('');
             setAuthor('');
         }

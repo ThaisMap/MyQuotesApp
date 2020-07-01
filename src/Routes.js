@@ -5,7 +5,7 @@ import QuotesList from './QuotesList';
 import AddQuote from './AddQuote';
 import SingleQuote from './SingleQuote';
  
-const BottomNavigationExample = () => {
+const BottomNavigationTab = () => {
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
     { key: 'add', title: 'Add', icon: 'bookmark-plus' },
@@ -27,8 +27,6 @@ const BottomNavigationExample = () => {
     />
   );
 };
-
-BottomNavigationExample.title = 'Bottom Navigation';
-
-export default BottomNavigationExample;
+  
+export default BottomNavigationTab;
  
